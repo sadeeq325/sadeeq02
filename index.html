@@ -3,27 +3,40 @@
     <head>
        <title>Login Form</title> 
     </head>
+    <style>
+       div {
+        margin: 100px;
+        height: auto;
+       }
+       table{
+        border-collapse: collapse;
+       }
+    </style>
     <body>
-        <div>
-          <table>
+        <div align="center">
+          <table align="center" border="" >
             <tr>
-              <td>login form</td>
+              <td colspan="2" align="center">Login Form</td>
             </tr>
             <tr>
                 <td>User: </td>
-                  <td><select>
-                      <option value="">----Select User----</option>
+                  <td ><select>
+                      <option value="">------Select User-----</option>
                       <option value="">Teacher</option>
                       <option value="">Student</option>
                       </select></td>  
             </tr>
             <tr>
+       
                 <td>Username: </td>
-                <td></td>
+                <td ><input type="text" name="username" id="username" placeholder="Input Username"></td>
             </tr>
             <tr>
                 <td>Password: </td>
-                <td></td>
+                <td><input type="password" name="Password" id="Password" placeholder="Input Password"></td>
+            </tr>
+            <tr>
+              <td align="center" colspan="2"><input type="submit" name="ok" id="ok" value="login"></td> 
             </tr>
             </table>
         </div>
